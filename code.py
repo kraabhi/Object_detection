@@ -2,12 +2,17 @@
 #Detect objects from image and save each object separately using imageai
 
 import object detection from imageai library
-from imageai.Detection import ObjectDetection import os execution_path = os.getcwd()
+from imageai.Detection import ObjectDetection 
+import os 
+execution_path = os.getcwd()
 
 #We create a new instance of the ObjectDetection class and set the model type to retinanet.Also we set the model path RetinaNet model file we downloaded and copied to the python file folder and load the model
 #RetinaNet is appropriate for high-performance and high-accuracy demanding detection tasks
 
-detector = ObjectDetection() detector.setModelTypeAsRetinaNet() detector.setModelPath( os.path.join(execution_path , "resnet50_coco_best_v2.0.1.h5")) detector.loadModel()
+detector = ObjectDetection() 
+detector.setModelTypeAsRetinaNet() 
+detector.setModelPath( os.path.join(execution_path , "resnet50_coco_best_v2.0.1.h5")) 
+detector.loadModel()
 
 #We provide input image path where original image is placed and out put path as the new file . We set the minimum percentage probability
 #so that those objects with that minimum probabilities will be detected , also we add one more argument extract_detected_objects which will extract all the objects with probability greater then or equal to 30. By default it is false , so we make it true.Object path will contain the address of all the objects detected and extracted and will be saved in the new file created above.

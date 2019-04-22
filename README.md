@@ -1,4 +1,8 @@
-Object Detection is one of the important past of computer vision whether we need to detect trsaffic light, cars or people.
+When we see any image, our brain instantly recognizes the objects contained in it. On the other hand, it takes a lot of time and training data for a machine to identify these objects. 
+
+It is through this that self-driving cars safely navigate through traffic and findsway in crowded place.
+Object Detection is one of the important part of computer vision whether we need to detect traffic light, cars or people.And this is just a bit of thing that object detection technology can do!
+
 Is always good to start with pretrained models like RetinaNet , YOLOv3 ,TinyYOLOv3 ,etc...
 
 Can download models from the links below : 
